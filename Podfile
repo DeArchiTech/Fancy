@@ -5,12 +5,15 @@ use_frameworks!
 target 'Fancy' do
 end
 
-target 'FancyTests' do
+def testing_pods
     pod 'Quick'
     pod 'Nimble'
 end
 
+target 'FancyTests' do
+    testing_pods
+end
+
 target 'FancyUITests' do
-    pod 'Quick'
-    pod 'Nimble'
+    testing_pods
 end

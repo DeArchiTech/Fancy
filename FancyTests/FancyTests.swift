@@ -7,9 +7,6 @@
 //
 
 import XCTest
-import Nimble
-import Quick
-
 @testable import Fancy
 
 class FancyTests: XCTestCase {

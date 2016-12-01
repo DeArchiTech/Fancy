@@ -20,12 +20,19 @@ class ToDoItem{
         self.name = ""
     }
     
-    func getCategory(urgent : Bool, important : Bool) -> Category{
-        if urgent && important{
+    init(urgent : Bool, important : Bool){
+        self.createDate = Date.init()
+        self.name = ""
+        self.urgent = urgent
+        self.important = important
+    }
+    
+    func getCategory() -> Category{
+        if self.urgent && self.important{
             return Category.DO
-        }else if !urgent && important{
+        }else if !self.urgent && self.important{
             return Category.DECIDE
-        }else if urgent && !important{
+        }else if self.urgent && !self.important{
             return Category.DELEGATE
         }else{//!urgent && !important
             return Category.DELETE
