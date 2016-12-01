@@ -21,4 +21,13 @@ class User{
         self.boardID.append(boardID)
     }
     
+    func removeBoard(boardID : String){
+        for index in 0...self.boardID.count {
+            if self.boardID[index] == boardID{
+                self.boardID.remove(at: index)
+                break
+            }
+        }
+    }
+    
 }

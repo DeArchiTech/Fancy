@@ -16,6 +16,9 @@
 		22094CD31DF0C4B5004C9BC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CA31DF0C32B004C9BC8 /* Quick.framework */; };
 		22094CD41DF0C4B5004C9BC8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CA31DF0C32B004C9BC8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22094CD91DF0D621004C9BC8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CD81DF0D621004C9BC8 /* User.swift */; };
+		22094CDB1DF0DD8D004C9BC8 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDA1DF0DD8D004C9BC8 /* Board.swift */; };
+		22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */; };
+		22094CDF1DF0DFB6004C9BC8 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */; };
 		22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */; };
 		22F5BC651DED0FD20096D5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC641DED0FD20096D5DB /* AppDelegate.swift */; };
 		22F5BC671DED0FD20096D5DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC661DED0FD20096D5DB /* FirstViewController.swift */; };
@@ -224,6 +227,9 @@
 		22094C8B1DF0C32A004C9BC8 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../Vendor/Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		22094CB21DF0C33B004C9BC8 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Vendor/Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		22094CD81DF0D621004C9BC8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		22094CDA1DF0DD8D004C9BC8 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSpec.swift; sourceTree = "<group>"; };
+		22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 		22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemSpec.swift; sourceTree = "<group>"; };
 		22F5BC611DED0FD20096D5DB /* Fancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5BC641DED0FD20096D5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -368,6 +374,8 @@
 				22F5BC7B1DED0FD30096D5DB /* FancyTests.swift */,
 				22F5BC7D1DED0FD30096D5DB /* Info.plist */,
 				22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */,
+				22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */,
+				22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */,
 			);
 			path = FancyTests;
 			sourceTree = "<group>";
@@ -387,6 +395,7 @@
 				22F5BC951DED19A10096D5DB /* ToDoItem.swift */,
 				22F5BC971DED1ADC0096D5DB /* Category.swift */,
 				22094CD81DF0D621004C9BC8 /* User.swift */,
+				22094CDA1DF0DD8D004C9BC8 /* Board.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -831,6 +840,7 @@
 				22F5BC981DED1ADC0096D5DB /* Category.swift in Sources */,
 				22094CD91DF0D621004C9BC8 /* User.swift in Sources */,
 				22F5BC651DED0FD20096D5DB /* AppDelegate.swift in Sources */,
+				22094CDB1DF0DD8D004C9BC8 /* Board.swift in Sources */,
 				22F5BC961DED19A10096D5DB /* ToDoItem.swift in Sources */,
 				22F5BC671DED0FD20096D5DB /* FirstViewController.swift in Sources */,
 			);
@@ -840,8 +850,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */,
 				22F5BC7C1DED0FD30096D5DB /* FancyTests.swift in Sources */,
 				22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */,
+				22094CDF1DF0DFB6004C9BC8 /* UserSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
