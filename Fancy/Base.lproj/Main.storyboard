@@ -26,25 +26,45 @@
                                 <rect key="frame" x="11" y="20" width="174" height="260"/>
                                 <color key="backgroundColor" red="0.71833419679999999" green="0.55310641260000004" blue="0.92302739619999996" alpha="0.53261325503355705" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="b0X-YR-iyv"/>
+                                    <constraint firstAttribute="height" constant="240" id="b0X-YR-iyv"/>
                                     <constraint firstAttribute="width" constant="140" id="eZF-Gk-mXP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksc-Tv-Wu0">
+                                <rect key="frame" x="11" y="318" width="174" height="260"/>
+                                <color key="backgroundColor" red="0.7058037144" green="0.93763296090000003" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="4P2-v1-08W"/>
+                                    <constraint firstAttribute="width" constant="140" id="k5k-NF-US6"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsL-Ub-Yoo">
                                 <rect key="frame" x="193" y="20" width="174" height="260"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.34451027684563756" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="TRo-L4-MAO"/>
+                                    <constraint firstAttribute="height" constant="240" id="TRo-L4-MAO"/>
                                     <constraint firstAttribute="width" constant="140" id="zIH-7G-lPe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-HK-z1C">
+                                <rect key="frame" x="193" y="318" width="174" height="260"/>
+                                <color key="backgroundColor" red="1" green="0.40273319829999998" blue="0.47711314510000002" alpha="0.52333263422818788" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="0dF-Np-q0h"/>
+                                    <constraint firstAttribute="height" constant="240" id="3l9-VW-7wH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rsL-Ub-Yoo" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="6Ft-fC-q3J"/>
+                            <constraint firstItem="7CP-HK-z1C" firstAttribute="top" secondItem="rsL-Ub-Yoo" secondAttribute="bottom" constant="10" id="KD2-tj-mtS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7CP-HK-z1C" secondAttribute="trailing" id="Qj7-GM-tTe"/>
                             <constraint firstItem="DCS-8z-h8B" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="VvA-Bh-ZFO"/>
                             <constraint firstItem="DCS-8z-h8B" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="XRo-XT-kfU"/>
+                            <constraint firstItem="ksc-Tv-Wu0" firstAttribute="top" secondItem="DCS-8z-h8B" secondAttribute="bottom" constant="10" id="lIl-ty-eO9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rsL-Ub-Yoo" secondAttribute="trailing" id="oq0-4p-q5W"/>
+                            <constraint firstItem="ksc-Tv-Wu0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="xxL-fF-T8t"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="BoardView" image="first" id="acW-dT-cKf"/>
@@ -52,6 +72,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="ibh-BR-72d">
+            <objects>
+                <viewController id="puy-1Q-Agv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DtY-1B-aPv"/>
+                        <viewControllerLayoutGuide type="bottom" id="E3o-pg-kCE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lT8-l6-r4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistics" id="kte-vb-3Yp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUX-77-FNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="0.0"/>
         </scene>
         <!--TaskView-->
         <scene sceneID="wg7-f3-ORb">
@@ -96,6 +136,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="puy-1Q-Agv" kind="relationship" relationship="viewControllers" id="v38-cO-b3e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
