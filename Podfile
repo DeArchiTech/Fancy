@@ -3,6 +3,9 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'Fancy' do
+    pod "SugarRecord"
+    pod "SugarRecord/CoreData"
+    pod "SugarRecord/CoreData+iCloud"
 end
 
 def testing_pods
