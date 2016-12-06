@@ -9,7 +9,7 @@
 import XCTest
 @testable import Fancy
 
-class FancyTests: XCTestCase {
+class FancyTest: XCTestCase {
     
     override func setUp() {
         super.setUp()

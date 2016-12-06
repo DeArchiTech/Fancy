@@ -11,6 +11,11 @@
 		22094CDB1DF0DD8D004C9BC8 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDA1DF0DD8D004C9BC8 /* Board.swift */; };
 		22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */; };
 		22094CDF1DF0DFB6004C9BC8 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */; };
+		225852231DF74ED400D1ABFD /* AddItemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225852221DF74ED400D1ABFD /* AddItemTest.swift */; };
+		225852351DF7513900D1ABFD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852311DF7513900D1ABFD /* Realm.framework */; };
+		225852361DF7513900D1ABFD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852321DF7513900D1ABFD /* RealmSwift.framework */; };
+		225852371DF7513900D1ABFD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852331DF7513900D1ABFD /* Result.framework */; };
+		225852381DF7513900D1ABFD /* SugarRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852341DF7513900D1ABFD /* SugarRecord.framework */; };
 		225A1A541DF1FD0100DA5C13 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A1A531DF1FD0100DA5C13 /* Skin.swift */; };
 		225A1A681DF1FD1E00DA5C13 /* SkinSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A1A671DF1FD1E00DA5C13 /* SkinSpec.swift */; };
 		227105271DF227BA00AD11F8 /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227105261DF227BA00AD11F8 /* DoViewController.swift */; };
@@ -21,14 +26,6 @@
 		2271053F1DF236AC00AD11F8 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2271053E1DF236AC00AD11F8 /* AddItemViewController.swift */; };
 		227105411DF23CD800AD11F8 /* Buttons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227105401DF23CD800AD11F8 /* Buttons.storyboard */; };
 		227105431DF23D8300AD11F8 /* AddItemViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */; };
-		227105811DF24C3600AD11F8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CC01DF0C33C004C9BC8 /* Nimble.framework */; };
-		227105821DF24C3600AD11F8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CC01DF0C33C004C9BC8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		227105851DF24C3600AD11F8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CBC1DF0C33C004C9BC8 /* Nimble.framework */; };
-		227105861DF24C3600AD11F8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CBC1DF0C33C004C9BC8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		227105891DF24C3600AD11F8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22094C9B1DF0C32B004C9BC8 /* Quick.framework */; };
-		2271058A1DF24C3600AD11F8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22094C9B1DF0C32B004C9BC8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2271058D1DF24C3600AD11F8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CA31DF0C32B004C9BC8 /* Quick.framework */; };
-		2271058E1DF24C3600AD11F8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22094CA31DF0C32B004C9BC8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */; };
 		22F5BC651DED0FD20096D5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC641DED0FD20096D5DB /* AppDelegate.swift */; };
 		22F5BC671DED0FD20096D5DB /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC661DED0FD20096D5DB /* BoardViewController.swift */; };
@@ -36,11 +33,14 @@
 		22F5BC6C1DED0FD20096D5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC6A1DED0FD20096D5DB /* Main.storyboard */; };
 		22F5BC6E1DED0FD20096D5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC6D1DED0FD20096D5DB /* Assets.xcassets */; };
 		22F5BC711DED0FD30096D5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC6F1DED0FD30096D5DB /* LaunchScreen.storyboard */; };
-		22F5BC7C1DED0FD30096D5DB /* FancyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC7B1DED0FD30096D5DB /* FancyTests.swift */; };
+		22F5BC7C1DED0FD30096D5DB /* FancyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC7B1DED0FD30096D5DB /* FancyTest.swift */; };
 		22F5BC871DED0FD30096D5DB /* FancyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC861DED0FD30096D5DB /* FancyUITests.swift */; };
 		22F5BC961DED19A10096D5DB /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC951DED19A10096D5DB /* ToDoItem.swift */; };
 		22F5BC981DED1ADC0096D5DB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC971DED1ADC0096D5DB /* Category.swift */; };
 		22F5BC9A1DED1FD60096D5DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC991DED1FD60096D5DB /* Podfile */; };
+		63A486161E4956891E080015 /* Pods_Fancy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99775C7001BBCD790B74450 /* Pods_Fancy.framework */; };
+		680C4806FD997D47E0E64E29 /* Pods_FancyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C759D3D6AA7E08CE73D1F76 /* Pods_FancyUITests.framework */; };
+		B89901642F3A1689448445EF /* Pods_FancyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C7F128BE8A23F3FF90FE2C /* Pods_FancyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,34 +170,6 @@
 			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
 			remoteInfo = "Nimble-tvOSTests";
 		};
-		227105831DF24C3600AD11F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22094CB21DF0C33B004C9BC8 /* Nimble.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F1A74281940169200FFFC47;
-			remoteInfo = "Nimble-iOS";
-		};
-		227105871DF24C3600AD11F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22094CB21DF0C33B004C9BC8 /* Nimble.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F925EAC195C0D6300ED456B;
-			remoteInfo = "Nimble-macOS";
-		};
-		2271058B1DF24C3600AD11F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22094C8B1DF0C32A004C9BC8 /* Quick.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DAEB6B8D1943873100289F44;
-			remoteInfo = "Quick-macOS";
-		};
-		2271058F1DF24C3600AD11F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22094C8B1DF0C32A004C9BC8 /* Quick.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A5D117B19473F2100F6D13D;
-			remoteInfo = "Quick-iOS";
-		};
 		22F5BC781DED0FD30096D5DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22F5BC591DED0FD20096D5DB /* Project object */;
@@ -214,23 +186,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		227105651DF247B600AD11F8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2271058E1DF24C3600AD11F8 /* Quick.framework in Embed Frameworks */,
-				227105821DF24C3600AD11F8 /* Nimble.framework in Embed Frameworks */,
-				227105861DF24C3600AD11F8 /* Nimble.framework in Embed Frameworks */,
-				2271058A1DF24C3600AD11F8 /* Quick.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		060A9C52DF03D8FB0148096F /* Pods-FancyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyUITests/Pods-FancyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		191E6DF6FEDEF23450EDAC50 /* Pods-Fancy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fancy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fancy/Pods-Fancy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,27 +195,32 @@
 		22094CDA1DF0DD8D004C9BC8 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSpec.swift; sourceTree = "<group>"; };
 		22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
+		225852221DF74ED400D1ABFD /* AddItemTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemTest.swift; sourceTree = "<group>"; };
+		225852311DF7513900D1ABFD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		225852321DF7513900D1ABFD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		225852331DF7513900D1ABFD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/Result/Result.framework"; sourceTree = "<group>"; };
+		225852341DF7513900D1ABFD /* SugarRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SugarRecord.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/SugarRecord/SugarRecord.framework"; sourceTree = "<group>"; };
 		225A1A531DF1FD0100DA5C13 /* Skin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
 		225A1A671DF1FD1E00DA5C13 /* SkinSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinSpec.swift; sourceTree = "<group>"; };
-		227105261DF227BA00AD11F8 /* DoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
-		227105361DF227D200AD11F8 /* DeleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
-		227105381DF2280D00AD11F8 /* DelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
-		2271053A1DF2284B00AD11F8 /* DecideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecideViewController.swift; sourceTree = "<group>"; };
-		2271053C1DF2323C00AD11F8 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
-		2271053E1DF236AC00AD11F8 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		227105261DF227BA00AD11F8 /* DoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoViewController.swift; path = Fancy/DoViewController.swift; sourceTree = "<group>"; };
+		227105361DF227D200AD11F8 /* DeleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeleteViewController.swift; path = Fancy/DeleteViewController.swift; sourceTree = "<group>"; };
+		227105381DF2280D00AD11F8 /* DelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelegateViewController.swift; path = Fancy/DelegateViewController.swift; sourceTree = "<group>"; };
+		2271053A1DF2284B00AD11F8 /* DecideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecideViewController.swift; path = Fancy/DecideViewController.swift; sourceTree = "<group>"; };
+		2271053C1DF2323C00AD11F8 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatisticsViewController.swift; path = Fancy/StatisticsViewController.swift; sourceTree = "<group>"; };
+		2271053E1DF236AC00AD11F8 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemViewController.swift; path = Fancy/AddItemViewController.swift; sourceTree = "<group>"; };
 		227105401DF23CD800AD11F8 /* Buttons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Buttons.storyboard; sourceTree = "<group>"; };
 		227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewControllerSpec.swift; sourceTree = "<group>"; };
 		22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemSpec.swift; sourceTree = "<group>"; };
 		22F5BC611DED0FD20096D5DB /* Fancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5BC641DED0FD20096D5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22F5BC661DED0FD20096D5DB /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
-		22F5BC681DED0FD20096D5DB /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		22F5BC661DED0FD20096D5DB /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardViewController.swift; path = Fancy/BoardViewController.swift; sourceTree = "<group>"; };
+		22F5BC681DED0FD20096D5DB /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskViewController.swift; path = Fancy/TaskViewController.swift; sourceTree = "<group>"; };
 		22F5BC6B1DED0FD20096D5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F5BC6D1DED0FD20096D5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F5BC701DED0FD30096D5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22F5BC721DED0FD30096D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F5BC771DED0FD30096D5DB /* FancyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22F5BC7B1DED0FD30096D5DB /* FancyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTests.swift; sourceTree = "<group>"; };
+		22F5BC7B1DED0FD30096D5DB /* FancyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTest.swift; sourceTree = "<group>"; };
 		22F5BC7D1DED0FD30096D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F5BC821DED0FD30096D5DB /* FancyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5BC861DED0FD30096D5DB /* FancyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyUITests.swift; sourceTree = "<group>"; };
@@ -270,7 +230,10 @@
 		22F5BC991DED1FD60096D5DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3519A1BCBC075E37239975E3 /* Pods-FancyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyTests/Pods-FancyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		72EF62DAD3AB6639369D4781 /* Pods-FancyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyUITests/Pods-FancyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C759D3D6AA7E08CE73D1F76 /* Pods_FancyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C7F128BE8A23F3FF90FE2C /* Pods_FancyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0D14BA1618193BFDC8FFC0 /* Pods-Fancy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fancy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fancy/Pods-Fancy.release.xcconfig"; sourceTree = "<group>"; };
+		D99775C7001BBCD790B74450 /* Pods_Fancy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fancy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C7BB881C0501BEAA6A78C9 /* Pods-FancyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyTests/Pods-FancyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,10 +242,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2271058D1DF24C3600AD11F8 /* Quick.framework in Frameworks */,
-				227105811DF24C3600AD11F8 /* Nimble.framework in Frameworks */,
-				227105851DF24C3600AD11F8 /* Nimble.framework in Frameworks */,
-				227105891DF24C3600AD11F8 /* Quick.framework in Frameworks */,
+				225852351DF7513900D1ABFD /* Realm.framework in Frameworks */,
+				225852361DF7513900D1ABFD /* RealmSwift.framework in Frameworks */,
+				225852371DF7513900D1ABFD /* Result.framework in Frameworks */,
+				225852381DF7513900D1ABFD /* SugarRecord.framework in Frameworks */,
+				63A486161E4956891E080015 /* Pods_Fancy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89901642F3A1689448445EF /* Pods_FancyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680C4806FD997D47E0E64E29 /* Pods_FancyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,9 +314,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		228847681DF77B7300BB4DDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22F5BC661DED0FD20096D5DB /* BoardViewController.swift */,
+				22F5BC681DED0FD20096D5DB /* TaskViewController.swift */,
+				227105261DF227BA00AD11F8 /* DoViewController.swift */,
+				227105361DF227D200AD11F8 /* DeleteViewController.swift */,
+				227105381DF2280D00AD11F8 /* DelegateViewController.swift */,
+				2271053A1DF2284B00AD11F8 /* DecideViewController.swift */,
+				2271053C1DF2323C00AD11F8 /* StatisticsViewController.swift */,
+				2271053E1DF236AC00AD11F8 /* AddItemViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		22F5BC581DED0FD20096D5DB = {
 			isa = PBXGroup;
 			children = (
+				228847681DF77B7300BB4DDA /* ViewControllers */,
 				22F5BC941DED19910096D5DB /* Model */,
 				22F5BC631DED0FD20096D5DB /* Fancy */,
 				22F5BC7A1DED0FD30096D5DB /* FancyTests */,
@@ -378,18 +360,10 @@
 			isa = PBXGroup;
 			children = (
 				22F5BC641DED0FD20096D5DB /* AppDelegate.swift */,
-				22F5BC661DED0FD20096D5DB /* BoardViewController.swift */,
-				22F5BC681DED0FD20096D5DB /* TaskViewController.swift */,
 				22F5BC6A1DED0FD20096D5DB /* Main.storyboard */,
 				22F5BC6D1DED0FD20096D5DB /* Assets.xcassets */,
 				22F5BC6F1DED0FD30096D5DB /* LaunchScreen.storyboard */,
 				22F5BC721DED0FD30096D5DB /* Info.plist */,
-				227105261DF227BA00AD11F8 /* DoViewController.swift */,
-				227105361DF227D200AD11F8 /* DeleteViewController.swift */,
-				227105381DF2280D00AD11F8 /* DelegateViewController.swift */,
-				2271053A1DF2284B00AD11F8 /* DecideViewController.swift */,
-				2271053C1DF2323C00AD11F8 /* StatisticsViewController.swift */,
-				2271053E1DF236AC00AD11F8 /* AddItemViewController.swift */,
 				227105401DF23CD800AD11F8 /* Buttons.storyboard */,
 			);
 			path = Fancy;
@@ -398,13 +372,14 @@
 		22F5BC7A1DED0FD30096D5DB /* FancyTests */ = {
 			isa = PBXGroup;
 			children = (
-				22F5BC7B1DED0FD30096D5DB /* FancyTests.swift */,
+				22F5BC7B1DED0FD30096D5DB /* FancyTest.swift */,
 				22F5BC7D1DED0FD30096D5DB /* Info.plist */,
 				22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */,
 				22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */,
 				22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */,
 				225A1A671DF1FD1E00DA5C13 /* SkinSpec.swift */,
 				227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */,
+				225852221DF74ED400D1ABFD /* AddItemTest.swift */,
 			);
 			path = FancyTests;
 			sourceTree = "<group>";
@@ -433,6 +408,13 @@
 		52AF6218074E24C80405CB5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				225852311DF7513900D1ABFD /* Realm.framework */,
+				225852321DF7513900D1ABFD /* RealmSwift.framework */,
+				225852331DF7513900D1ABFD /* Result.framework */,
+				225852341DF7513900D1ABFD /* SugarRecord.framework */,
+				D99775C7001BBCD790B74450 /* Pods_Fancy.framework */,
+				A2C7F128BE8A23F3FF90FE2C /* Pods_FancyTests.framework */,
+				9C759D3D6AA7E08CE73D1F76 /* Pods_FancyUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -450,15 +432,10 @@
 				22F5BC5F1DED0FD20096D5DB /* Resources */,
 				FB06740087675A20E70858BA /* [CP] Embed Pods Frameworks */,
 				0305876F48E1E1F8D600EDAB /* [CP] Copy Pods Resources */,
-				227105651DF247B600AD11F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				227105841DF24C3600AD11F8 /* PBXTargetDependency */,
-				227105881DF24C3600AD11F8 /* PBXTargetDependency */,
-				2271058C1DF24C3600AD11F8 /* PBXTargetDependency */,
-				227105901DF24C3600AD11F8 /* PBXTargetDependency */,
 			);
 			name = Fancy;
 			productName = Fancy;
@@ -888,8 +865,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225852231DF74ED400D1ABFD /* AddItemTest.swift in Sources */,
 				22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */,
-				22F5BC7C1DED0FD30096D5DB /* FancyTests.swift in Sources */,
+				22F5BC7C1DED0FD30096D5DB /* FancyTest.swift in Sources */,
 				227105431DF23D8300AD11F8 /* AddItemViewControllerSpec.swift in Sources */,
 				22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */,
 				22094CDF1DF0DFB6004C9BC8 /* UserSpec.swift in Sources */,
@@ -908,26 +886,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		227105841DF24C3600AD11F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nimble-iOS";
-			targetProxy = 227105831DF24C3600AD11F8 /* PBXContainerItemProxy */;
-		};
-		227105881DF24C3600AD11F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nimble-macOS";
-			targetProxy = 227105871DF24C3600AD11F8 /* PBXContainerItemProxy */;
-		};
-		2271058C1DF24C3600AD11F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Quick-macOS";
-			targetProxy = 2271058B1DF24C3600AD11F8 /* PBXContainerItemProxy */;
-		};
-		227105901DF24C3600AD11F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Quick-iOS";
-			targetProxy = 2271058F1DF24C3600AD11F8 /* PBXContainerItemProxy */;
-		};
 		22F5BC791DED0FD30096D5DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22F5BC601DED0FD20096D5DB /* Fancy */;
@@ -963,6 +921,7 @@
 		22F5BC891DED0FD30096D5DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1012,6 +971,7 @@
 		22F5BC8A1DED0FD30096D5DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1055,7 +1015,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 191E6DF6FEDEF23450EDAC50 /* Pods-Fancy.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J9T57DG7T3;
 				ENABLE_BITCODE = NO;
@@ -1072,7 +1031,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC0D14BA1618193BFDC8FFC0 /* Pods-Fancy.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J9T57DG7T3;
 				ENABLE_BITCODE = NO;

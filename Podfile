@@ -6,11 +6,16 @@ target 'Fancy' do
     pod "SugarRecord"
     pod "SugarRecord/CoreData"
     pod "SugarRecord/CoreData+iCloud"
+    pod 'RealmSwift'
 end
 
 def testing_pods
     pod 'Quick'
     pod 'Nimble'
+    pod "SugarRecord"
+    pod "SugarRecord/CoreData"
+    pod "SugarRecord/CoreData+iCloud"
+    pod 'RealmSwift'
 end
 
 target 'FancyTests' do
