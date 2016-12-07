@@ -6,14 +6,14 @@
 //  Copyright © 2016 geniemedialabs. All rights reserved.
 //
 
-import Foundation
-import Nimble
-import Quick
-@testable import Fancy
+//import Foundation
+//import Nimble
+//import Quick
+//@testable import Fancy
 
-class ToDoItemSpec: QuickSpec{
+//class ToDoItemSpec: QuickSpec{
     
-    override func spec() {
+//    override func spec() {
 //        describe("#Get Category"){
 //            it("return Category.DO if it is both urgent and important"){
 //                let expected = Category.DO
@@ -36,6 +36,6 @@ class ToDoItemSpec: QuickSpec{
 //                expect(actural.getCategory()).to(equal(expected))
 //            }
 //        }
-    }
+//    }
     
-}
+//}

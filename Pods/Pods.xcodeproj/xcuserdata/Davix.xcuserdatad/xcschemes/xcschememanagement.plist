@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Nimble.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Fancy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -20,11 +15,6 @@
 			<false/>
 		</dict>
 		<key>Pods-FancyUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,12 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1321E318D10CFDC9F5B93A7952492CCD</key>
+		<key>2442E0A996F330E628C08492FB138D7C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2442E0A996F330E628C08492FB138D7C</key>
+		<key>4609C1D2B3C1A079F6E5A282565C3920</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5DB258ED9EA9585CC7347BC07EDFC88A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>69440A24A57E5E9E35CCF66B290BC542</key>
+		<key>6B2DCE507016AC1B575651EF71FBC69C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A76F450B6ABC948721080B8CC536EEFE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AEC2B3F41DE7B90B7AAB2A946F8B6EF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,8 +12,8 @@ import CoreData
 @objc(ToDoItem)
 class ToDoItem : NSManagedObject {
     
-    @NSManaged var name : String
-    @NSManaged var createDate : Date
+    @NSManaged var name : String?
+    @NSManaged var createDate : Date?
     var dueDate : Date?
     var urgent : Bool  = false
     var important : Bool = true

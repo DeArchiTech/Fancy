@@ -10,8 +10,8 @@ target 'Fancy' do
 end
 
 def testing_pods
-    pod 'Quick'
-    pod 'Nimble'
+    #    pod 'Quick'
+    #    pod 'Nimble'
     pod "SugarRecord"
     pod "SugarRecord/CoreData"
     pod "SugarRecord/CoreData+iCloud"
