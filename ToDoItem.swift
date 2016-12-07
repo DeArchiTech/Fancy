@@ -7,25 +7,16 @@
 //
 
 import Foundation
-class ToDoItem{
+import CoreData
+
+@objc(ToDoItem)
+class ToDoItem : NSManagedObject {
     
-    var name : String
-    var createDate : Date
+    @NSManaged var name : String
+    @NSManaged var createDate : Date
     var dueDate : Date?
     var urgent : Bool  = false
     var important : Bool = true
-    
-    init() {
-        self.createDate = Date.init()
-        self.name = ""
-    }
-    
-    init(urgent : Bool, important : Bool){
-        self.createDate = Date.init()
-        self.name = ""
-        self.urgent = urgent
-        self.important = important
-    }
     
     func getCategory() -> Category{
         if self.urgent && self.important{

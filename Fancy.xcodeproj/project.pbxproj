@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2205ADD81DF8922500832C8A /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205ADD71DF8922500832C8A /* CoreDataHelper.swift */; };
+		2205ADDB1DF8933E00832C8A /* ToDoItemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205ADDA1DF8933E00832C8A /* ToDoItemDAO.swift */; };
+		2205ADDD1DF8949000832C8A /* CoreDataHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205ADDC1DF8949000832C8A /* CoreDataHelperTest.swift */; };
 		22094CD91DF0D621004C9BC8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CD81DF0D621004C9BC8 /* User.swift */; };
 		22094CDB1DF0DD8D004C9BC8 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDA1DF0DD8D004C9BC8 /* Board.swift */; };
 		22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */; };
@@ -38,7 +41,6 @@
 		22F5BC961DED19A10096D5DB /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC951DED19A10096D5DB /* ToDoItem.swift */; };
 		22F5BC981DED1ADC0096D5DB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC971DED1ADC0096D5DB /* Category.swift */; };
 		22F5BC9A1DED1FD60096D5DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC991DED1FD60096D5DB /* Podfile */; };
-		63A486161E4956891E080015 /* Pods_Fancy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99775C7001BBCD790B74450 /* Pods_Fancy.framework */; };
 		680C4806FD997D47E0E64E29 /* Pods_FancyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C759D3D6AA7E08CE73D1F76 /* Pods_FancyUITests.framework */; };
 		B89901642F3A1689448445EF /* Pods_FancyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C7F128BE8A23F3FF90FE2C /* Pods_FancyTests.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +191,9 @@
 /* Begin PBXFileReference section */
 		060A9C52DF03D8FB0148096F /* Pods-FancyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyUITests/Pods-FancyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		191E6DF6FEDEF23450EDAC50 /* Pods-Fancy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fancy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fancy/Pods-Fancy.debug.xcconfig"; sourceTree = "<group>"; };
+		2205ADD71DF8922500832C8A /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		2205ADDA1DF8933E00832C8A /* ToDoItemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemDAO.swift; sourceTree = "<group>"; };
+		2205ADDC1DF8949000832C8A /* CoreDataHelperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelperTest.swift; sourceTree = "<group>"; };
 		22094C8B1DF0C32A004C9BC8 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../Vendor/Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		22094CB21DF0C33B004C9BC8 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Vendor/Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		22094CD81DF0D621004C9BC8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -246,7 +251,6 @@
 				225852361DF7513900D1ABFD /* RealmSwift.framework in Frameworks */,
 				225852371DF7513900D1ABFD /* Result.framework in Frameworks */,
 				225852381DF7513900D1ABFD /* SugarRecord.framework in Frameworks */,
-				63A486161E4956891E080015 /* Pods_Fancy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,22 @@
 				060A9C52DF03D8FB0148096F /* Pods-FancyUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2205ADC41DF8920C00832C8A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2205ADD71DF8922500832C8A /* CoreDataHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		2205ADD91DF8932900832C8A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2205ADDA1DF8933E00832C8A /* ToDoItemDAO.swift */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 		22094C8C1DF0C32A004C9BC8 /* Products */ = {
@@ -332,6 +352,8 @@
 		22F5BC581DED0FD20096D5DB = {
 			isa = PBXGroup;
 			children = (
+				2205ADD91DF8932900832C8A /* Database */,
+				2205ADC41DF8920C00832C8A /* Helper */,
 				228847681DF77B7300BB4DDA /* ViewControllers */,
 				22F5BC941DED19910096D5DB /* Model */,
 				22F5BC631DED0FD20096D5DB /* Fancy */,
@@ -380,6 +402,7 @@
 				225A1A671DF1FD1E00DA5C13 /* SkinSpec.swift */,
 				227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */,
 				225852221DF74ED400D1ABFD /* AddItemTest.swift */,
+				2205ADDC1DF8949000832C8A /* CoreDataHelperTest.swift */,
 			);
 			path = FancyTests;
 			sourceTree = "<group>";
@@ -844,10 +867,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2205ADD81DF8922500832C8A /* CoreDataHelper.swift in Sources */,
 				227105371DF227D200AD11F8 /* DeleteViewController.swift in Sources */,
 				227105271DF227BA00AD11F8 /* DoViewController.swift in Sources */,
 				2271053B1DF2284B00AD11F8 /* DecideViewController.swift in Sources */,
 				22F5BC691DED0FD20096D5DB /* TaskViewController.swift in Sources */,
+				2205ADDB1DF8933E00832C8A /* ToDoItemDAO.swift in Sources */,
 				22F5BC981DED1ADC0096D5DB /* Category.swift in Sources */,
 				227105391DF2280D00AD11F8 /* DelegateViewController.swift in Sources */,
 				225A1A541DF1FD0100DA5C13 /* Skin.swift in Sources */,
@@ -867,6 +892,7 @@
 			files = (
 				225852231DF74ED400D1ABFD /* AddItemTest.swift in Sources */,
 				22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */,
+				2205ADDD1DF8949000832C8A /* CoreDataHelperTest.swift in Sources */,
 				22F5BC7C1DED0FD30096D5DB /* FancyTest.swift in Sources */,
 				227105431DF23D8300AD11F8 /* AddItemViewControllerSpec.swift in Sources */,
 				22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */,

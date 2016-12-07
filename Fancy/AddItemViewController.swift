@@ -22,8 +22,20 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func addItem(itemName: String, important : Bool, urgent : Bool){
+    func addItemToDatabase(name: String, important : Bool, urgent : Bool, dueDate : Date) -> Bool{
         
+        let db = self.coreDataStorage()
+        try! db.operation { (context, save) -> Void in
+            let _object: ToDoItem = try! context.new()
+            _object.name = name
+            _object.important = important
+            _object.urgent = urgent
+            _object.dueDate = dueDate
+            _object.createDate = Date.init()
+            try! context.insert(_object)
+            save()
+        }
+        return true
         
     }
     

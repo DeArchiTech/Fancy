@@ -29,7 +29,12 @@ class AddItemTest: XCTestCase {
         XCTAssertNotNil(storage)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //Test
+    }
+    
+    func testAddItem(){
+        let vc = AddItemViewController.init()
+        let result = vc.addItemToDatabase(name : "" ,important : true ,urgent : true, dueDate : Date.init())
+        XCTAssertTrue(result)
     }
 
 }
