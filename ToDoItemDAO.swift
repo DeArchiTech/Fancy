@@ -11,25 +11,62 @@ import SugarRecord
 
 class ToDoItemDAO : NSObject{
 
-    var storage : CoreDataDefaultStorage?
+    var storage : NSManagedObjectContext?
 
-    init(storage : CoreDataDefaultStorage){
+    init(storage : NSManagedObjectContext){
         self.storage = storage
     }
     
-    func addItemToDatabase(name: String, important : Bool, urgent : Bool, dueDate : Date) -> Bool{
+    func addItem(name: String, important : Bool, urgent : Bool) -> Bool{
         
-//        let db = self.storage
-//        try! db?.operation { (context, save) -> Void in
-//            let _object: ToDoItem = try! context.new()
-//            _object.name = name
-//            _object.important = important
-//            _object.urgent = urgent
-//            _object.dueDate = dueDate
-//            _object.createDate = Date.init()
-//            try! context.insert(_object)
-//            save()
-//        }
+        // create an instance of our managedObjectContext
+        let moc = self.storage!
+        
+        // we set up our entity by selecting the entity and context that we're targeting
+        let entity = NSEntityDescription.insertNewObject(forEntityName: "ToDoItem", into: moc) as! ToDoItem
+        
+        // add our data
+        entity.setValue(name, forKey: "name")
+        entity.setValue(important, forKey: "important")
+        entity.setValue(urgent, forKey: "urgent")
+        
+        // we save our entity
+        do {
+            try moc.save()
+        } catch {
+            fatalError("Failure to save context: \(error)")
+        }
+        return true
+        
+    }
+    
+    func getAllItems() -> [ToDoItem]{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ToDoItem")
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let fetchResults = try self.storage?.fetch(fetchRequest) as! [ToDoItem]
+            return fetchResults
+        }catch{
+            return []
+        }
+
+    }
+    
+    func removeItem(name : String) -> Bool{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ToDoItem")
+        fetchRequest.predicate = NSPredicate(format: "firstName beginswith[c] %@", "D")
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let fetchResults = try self.storage?.fetch(fetchRequest) as! [ToDoItem]
+            for item in fetchResults {
+                self.storage?.delete(item)
+            }
+            try self.storage!.save()
+        }catch{
+            return false
+        }
         return true
         
     }

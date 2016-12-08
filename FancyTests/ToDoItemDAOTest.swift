@@ -24,23 +24,35 @@ class ToDoItemDAOTest: XCTestCase{
         super.tearDown()
     }
     
-    func testCoreDataStorage() {
+    func testAddItem(){
         
-        let store = CoreDataStore.named("test")
-        let bundle = Bundle(for: self.classForCoder)
-        let model = CoreDataObjectModel.merged([bundle])
-        let storage = try! CoreDataDefaultStorage(store: store, model: model)
-//        let itemDAO = ToDoItemDAO.init(storage : storage)
+        let helper = CoreDataHelper.init()
+        let context = helper.setUpInMemoryManagedObjectContext()
+        let toDoItemDAO = ToDoItemDAO.init(storage: context)
+        XCTAssertTrue(toDoItemDAO.addItem(name: "", important: true, urgent: true))
         
-        let memoryContext = storage.memoryContext as! NSManagedObjectContext!
-        let _: ToDoItem = try! memoryContext!.create()
-        try! memoryContext?.save()
-//        _ = try? storage.operation({ (context, save) -> Void in
-//            let resultsCount = try! context.request(Track.self).fetch().count
-//            XCTAssert(resultsCount == 0)
-        //})
-        //let result = itemDAO.addItemToDatabase(name: "TestItem", important : true, urgent : true, dueDate : Date.init())
-        //XCTAssertTrue(result)
+    }
+    
+    func testGetAllItems(){
+        
+        let helper = CoreDataHelper.init()
+        let context = helper.setUpInMemoryManagedObjectContext()
+        let toDoItemDAO = ToDoItemDAO.init(storage: context)
+        XCTAssertTrue(toDoItemDAO.addItem(name: "", important: true, urgent: true))
+        XCTAssertTrue(toDoItemDAO.getAllItems().count > 0)
+    }
+    
+    
+    func testGetItem(){
+        
+        let helper = CoreDataHelper.init()
+        let context = helper.setUpInMemoryManagedObjectContext()
+        let toDoItemDAO = ToDoItemDAO.init(storage: context)
+        XCTAssertTrue(toDoItemDAO.addItem(name: "", important: true, urgent: true))
+        
+    }
+    
+    func testRemoveItem(){
         
     }
     
