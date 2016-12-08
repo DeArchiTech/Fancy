@@ -30,19 +30,15 @@ class ToDoItemDAOTest: XCTestCase{
         let bundle = Bundle(for: self.classForCoder)
         let model = CoreDataObjectModel.merged([bundle])
         let storage = try! CoreDataDefaultStorage(store: store, model: model)
-        let itemDAO = ToDoItemDAO.init(storage : storage)
+//        let itemDAO = ToDoItemDAO.init(storage : storage)
         
         let memoryContext = storage.memoryContext as! NSManagedObjectContext!
-        XCTAssertNotNil(memoryContext)
-        let path = store.path().path
-        print(path)
-        XCTAssertNotNil(path)
         let _: ToDoItem = try! memoryContext!.create()
         try! memoryContext?.save()
-        _ = try? storage.operation({ (context, save) -> Void in
-            let resultsCount = try! context.request(ToDoItem.self).fetch().count
-            XCTAssert(resultsCount == 0)
-        })
+//        _ = try? storage.operation({ (context, save) -> Void in
+//            let resultsCount = try! context.request(Track.self).fetch().count
+//            XCTAssert(resultsCount == 0)
+        //})
         //let result = itemDAO.addItemToDatabase(name: "TestItem", important : true, urgent : true, dueDate : Date.init())
         //XCTAssertTrue(result)
         

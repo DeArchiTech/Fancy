@@ -32,6 +32,9 @@
 		227105431DF23D8300AD11F8 /* AddItemViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */; };
 		22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */; };
 		229F0FD41DF8AB5000BC96B8 /* ToDoItemDAOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F0FD31DF8AB5000BC96B8 /* ToDoItemDAOTest.swift */; };
+		22D2B5AC1DF9E8E30044F599 /* DelegateViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2B5AB1DF9E8E30044F599 /* DelegateViewControllerTest.swift */; };
+		22F3BD241DF8D69100278028 /* myCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F3BD221DF8D69100278028 /* myCoreDataModel.xcdatamodeld */; };
+		22F3BD2A1DF8E11000278028 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F3BD291DF8E11000278028 /* DataController.swift */; };
 		22F5BC651DED0FD20096D5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC641DED0FD20096D5DB /* AppDelegate.swift */; };
 		22F5BC671DED0FD20096D5DB /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC661DED0FD20096D5DB /* BoardViewController.swift */; };
 		22F5BC691DED0FD20096D5DB /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC681DED0FD20096D5DB /* TaskViewController.swift */; };
@@ -40,7 +43,7 @@
 		22F5BC711DED0FD30096D5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC6F1DED0FD30096D5DB /* LaunchScreen.storyboard */; };
 		22F5BC7C1DED0FD30096D5DB /* FancyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC7B1DED0FD30096D5DB /* FancyTest.swift */; };
 		22F5BC871DED0FD30096D5DB /* FancyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC861DED0FD30096D5DB /* FancyUITests.swift */; };
-		22F5BC961DED19A10096D5DB /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC951DED19A10096D5DB /* ToDoItem.swift */; };
+		22F5BC961DED19A10096D5DB /* ToDoItemOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC951DED19A10096D5DB /* ToDoItemOld.swift */; };
 		22F5BC981DED1ADC0096D5DB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC971DED1ADC0096D5DB /* Category.swift */; };
 		22F5BC9A1DED1FD60096D5DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22F5BC991DED1FD60096D5DB /* Podfile */; };
 		680C4806FD997D47E0E64E29 /* Pods_FancyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C759D3D6AA7E08CE73D1F76 /* Pods_FancyUITests.framework */; };
@@ -91,6 +94,9 @@
 		227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewControllerSpec.swift; sourceTree = "<group>"; };
 		22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemSpec.swift; sourceTree = "<group>"; };
 		229F0FD31DF8AB5000BC96B8 /* ToDoItemDAOTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemDAOTest.swift; sourceTree = "<group>"; };
+		22D2B5AB1DF9E8E30044F599 /* DelegateViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateViewControllerTest.swift; sourceTree = "<group>"; };
+		22F3BD231DF8D69100278028 /* myCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		22F3BD291DF8E11000278028 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		22F5BC611DED0FD20096D5DB /* Fancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5BC641DED0FD20096D5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F5BC661DED0FD20096D5DB /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardViewController.swift; path = Fancy/BoardViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +111,7 @@
 		22F5BC821DED0FD30096D5DB /* FancyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5BC861DED0FD30096D5DB /* FancyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyUITests.swift; sourceTree = "<group>"; };
 		22F5BC881DED0FD30096D5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F5BC951DED19A10096D5DB /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		22F5BC951DED19A10096D5DB /* ToDoItemOld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemOld.swift; sourceTree = "<group>"; };
 		22F5BC971DED1ADC0096D5DB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		22F5BC991DED1FD60096D5DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3519A1BCBC075E37239975E3 /* Pods-FancyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyTests/Pods-FancyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +202,8 @@
 		22F5BC581DED0FD20096D5DB = {
 			isa = PBXGroup;
 			children = (
+				22F3BD291DF8E11000278028 /* DataController.swift */,
+				22F3BD221DF8D69100278028 /* myCoreDataModel.xcdatamodeld */,
 				2205ADD91DF8932900832C8A /* Database */,
 				2205ADC41DF8920C00832C8A /* Helper */,
 				228847681DF77B7300BB4DDA /* ViewControllers */,
@@ -246,6 +254,7 @@
 				225852221DF74ED400D1ABFD /* AddItemTest.swift */,
 				2205ADDC1DF8949000832C8A /* CoreDataHelperTest.swift */,
 				229F0FD31DF8AB5000BC96B8 /* ToDoItemDAOTest.swift */,
+				22D2B5AB1DF9E8E30044F599 /* DelegateViewControllerTest.swift */,
 			);
 			path = FancyTests;
 			sourceTree = "<group>";
@@ -262,7 +271,7 @@
 		22F5BC941DED19910096D5DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22F5BC951DED19A10096D5DB /* ToDoItem.swift */,
+				22F5BC951DED19A10096D5DB /* ToDoItemOld.swift */,
 				22F5BC971DED1ADC0096D5DB /* Category.swift */,
 				22094CD81DF0D621004C9BC8 /* User.swift */,
 				22094CDA1DF0DD8D004C9BC8 /* Board.swift */,
@@ -581,9 +590,11 @@
 				227105391DF2280D00AD11F8 /* DelegateViewController.swift in Sources */,
 				225A1A541DF1FD0100DA5C13 /* Skin.swift in Sources */,
 				22094CD91DF0D621004C9BC8 /* User.swift in Sources */,
+				22F3BD241DF8D69100278028 /* myCoreDataModel.xcdatamodeld in Sources */,
 				22F5BC651DED0FD20096D5DB /* AppDelegate.swift in Sources */,
 				22094CDB1DF0DD8D004C9BC8 /* Board.swift in Sources */,
-				22F5BC961DED19A10096D5DB /* ToDoItem.swift in Sources */,
+				22F3BD2A1DF8E11000278028 /* DataController.swift in Sources */,
+				22F5BC961DED19A10096D5DB /* ToDoItemOld.swift in Sources */,
 				2271053F1DF236AC00AD11F8 /* AddItemViewController.swift in Sources */,
 				22F5BC671DED0FD20096D5DB /* BoardViewController.swift in Sources */,
 				2271053D1DF2323C00AD11F8 /* StatisticsViewController.swift in Sources */,
@@ -594,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D2B5AC1DF9E8E30044F599 /* DelegateViewControllerTest.swift in Sources */,
 				225852231DF74ED400D1ABFD /* AddItemTest.swift in Sources */,
 				229F0FD41DF8AB5000BC96B8 /* ToDoItemDAOTest.swift in Sources */,
 				22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */,
@@ -876,6 +888,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22F3BD221DF8D69100278028 /* myCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22F3BD231DF8D69100278028 /* myCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 22F3BD231DF8D69100278028 /* myCoreDataModel.xcdatamodel */;
+			path = myCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 22F5BC591DED0FD20096D5DB /* Project object */;
 }
