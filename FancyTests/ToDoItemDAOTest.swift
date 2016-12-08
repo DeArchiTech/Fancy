@@ -42,17 +42,47 @@ class ToDoItemDAOTest: XCTestCase{
         XCTAssertTrue(toDoItemDAO.getAllItems().count > 0)
     }
     
+    func testDeleteAllItems(){
+        
+        let helper = CoreDataHelper.init()
+        let context = helper.setUpInMemoryManagedObjectContext()
+        let toDoItemDAO = ToDoItemDAO.init(storage: context)
+        XCTAssertTrue(toDoItemDAO.addItem(name: "", important: true, urgent: true))
+        XCTAssertTrue(toDoItemDAO.removeAllItems())
+    }
     
     func testGetItem(){
         
         let helper = CoreDataHelper.init()
         let context = helper.setUpInMemoryManagedObjectContext()
         let toDoItemDAO = ToDoItemDAO.init(storage: context)
-        XCTAssertTrue(toDoItemDAO.addItem(name: "", important: true, urgent: true))
-        
+        let name = "testItem"
+        //Remove Everything In The Database
+        XCTAssertTrue(toDoItemDAO.removeAllItems())
+        //Add an item to the Database
+        XCTAssertTrue(toDoItemDAO.addItem(name: name, important: true, urgent: true))
+        //Get the item back from the database
+        let item = toDoItemDAO.getItem(name: name)
+        XCTAssertEqual(item?.name, name)
+
     }
     
     func testRemoveItem(){
+        
+        let helper = CoreDataHelper.init()
+        let context = helper.setUpInMemoryManagedObjectContext()
+        let toDoItemDAO = ToDoItemDAO.init(storage: context)
+        let name = "testItem"
+        
+        //Remove Everything In The Database
+        XCTAssertTrue(toDoItemDAO.removeAllItems())
+        //Add an item to the Database
+        XCTAssertTrue(toDoItemDAO.addItem(name: name, important: true, urgent: true))
+        //Remove an item from teh database
+        XCTAssertTrue(toDoItemDAO.removeItem(name: name))
+        
+        let array = toDoItemDAO.getAllItems()
+        XCTAssertTrue(array.count == 0)
         
     }
     

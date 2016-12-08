@@ -53,10 +53,41 @@ class ToDoItemDAO : NSObject{
 
     }
     
+    func getItem(name : String) -> ToDoItem?{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ToDoItem")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", name)
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let fetchResults = try self.storage?.fetch(fetchRequest) as! [ToDoItem]
+            return fetchResults.first
+        }catch{
+            return nil
+        }
+        
+    }
+    
+    func removeAllItems() -> Bool{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ToDoItem")
+        fetchRequest.returnsObjectsAsFaults = false
+        do{
+            let fetchResults = try self.storage?.fetch(fetchRequest) as! [ToDoItem]
+            for item in fetchResults {
+                self.storage?.delete(item)
+            }
+            try self.storage!.save()
+        }catch{
+            return false
+        }
+        return true
+        
+    }
+    
     func removeItem(name : String) -> Bool{
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ToDoItem")
-        fetchRequest.predicate = NSPredicate(format: "firstName beginswith[c] %@", "D")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", name)
         fetchRequest.returnsObjectsAsFaults = false
         do{
             let fetchResults = try self.storage?.fetch(fetchRequest) as! [ToDoItem]
