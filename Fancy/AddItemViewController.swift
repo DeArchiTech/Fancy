@@ -10,7 +10,7 @@ import UIKit
 import SugarRecord
 import CoreData
 
-class AddItemViewController: UIViewController {
+@objc class AddItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,21 +22,11 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func addItemToDatabase(name: String, important : Bool, urgent : Bool, dueDate : Date) -> Bool{
-//        
-//        let db = self.coreDataStorage()
-//        try! db.operation { (context, save) -> Void in
-//            let _object: ToDoItem = try! context.new()
-//            _object.name = name
-//            _object.important = important
-//            _object.urgent = urgent
-//            _object.dueDate = dueDate
-//            _object.createDate = Date.init()
-//            try! context.insert(_object)
-//            save()
-//        }
-        return true
+    func addItemToDatabase(name: String, important : Bool, urgent : Bool) -> Bool{
         
+        let dataController = DataController.init()
+        let itemDAO = ToDoItemDAO.init(storage: dataController.managedObjectContext)
+        return itemDAO.addItem(name: name, important: important, urgent: urgent)
     }
     
     func coreDataStorage() -> CoreDataDefaultStorage {

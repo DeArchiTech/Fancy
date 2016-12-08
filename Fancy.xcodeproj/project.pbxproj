@@ -15,7 +15,6 @@
 		22094CDB1DF0DD8D004C9BC8 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDA1DF0DD8D004C9BC8 /* Board.swift */; };
 		22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */; };
 		22094CDF1DF0DFB6004C9BC8 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */; };
-		225852231DF74ED400D1ABFD /* AddItemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225852221DF74ED400D1ABFD /* AddItemTest.swift */; };
 		225852351DF7513900D1ABFD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852311DF7513900D1ABFD /* Realm.framework */; };
 		225852361DF7513900D1ABFD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852321DF7513900D1ABFD /* RealmSwift.framework */; };
 		225852371DF7513900D1ABFD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225852331DF7513900D1ABFD /* Result.framework */; };
@@ -33,6 +32,7 @@
 		22917BF81DEDFFDB0011D471 /* ToDoItemSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */; };
 		229F0FD41DF8AB5000BC96B8 /* ToDoItemDAOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F0FD31DF8AB5000BC96B8 /* ToDoItemDAOTest.swift */; };
 		22D2B5AC1DF9E8E30044F599 /* DelegateViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2B5AB1DF9E8E30044F599 /* DelegateViewControllerTest.swift */; };
+		22D2B5AE1DFA14440044F599 /* AddItemViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2B5AD1DFA14440044F599 /* AddItemViewControllerTest.swift */; };
 		22F3BD241DF8D69100278028 /* myCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F3BD221DF8D69100278028 /* myCoreDataModel.xcdatamodeld */; };
 		22F3BD2A1DF8E11000278028 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F3BD291DF8E11000278028 /* DataController.swift */; };
 		22F5BC651DED0FD20096D5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5BC641DED0FD20096D5DB /* AppDelegate.swift */; };
@@ -77,7 +77,6 @@
 		22094CDA1DF0DD8D004C9BC8 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		22094CDC1DF0DE0C004C9BC8 /* BoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSpec.swift; sourceTree = "<group>"; };
 		22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
-		225852221DF74ED400D1ABFD /* AddItemTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemTest.swift; sourceTree = "<group>"; };
 		225852311DF7513900D1ABFD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
 		225852321DF7513900D1ABFD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		225852331DF7513900D1ABFD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/Fancy-gwsoobkxswiervfzzifkgqzskuul/Build/Products/Debug-iphoneos/Result/Result.framework"; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		22917BF71DEDFFDB0011D471 /* ToDoItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemSpec.swift; sourceTree = "<group>"; };
 		229F0FD31DF8AB5000BC96B8 /* ToDoItemDAOTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemDAOTest.swift; sourceTree = "<group>"; };
 		22D2B5AB1DF9E8E30044F599 /* DelegateViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateViewControllerTest.swift; sourceTree = "<group>"; };
+		22D2B5AD1DFA14440044F599 /* AddItemViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewControllerTest.swift; sourceTree = "<group>"; };
 		22F3BD231DF8D69100278028 /* myCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		22F3BD291DF8E11000278028 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		22F5BC611DED0FD20096D5DB /* Fancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,10 +251,10 @@
 				22094CDE1DF0DFB6004C9BC8 /* UserSpec.swift */,
 				225A1A671DF1FD1E00DA5C13 /* SkinSpec.swift */,
 				227105421DF23D8300AD11F8 /* AddItemViewControllerSpec.swift */,
-				225852221DF74ED400D1ABFD /* AddItemTest.swift */,
 				2205ADDC1DF8949000832C8A /* CoreDataHelperTest.swift */,
 				229F0FD31DF8AB5000BC96B8 /* ToDoItemDAOTest.swift */,
 				22D2B5AB1DF9E8E30044F599 /* DelegateViewControllerTest.swift */,
+				22D2B5AD1DFA14440044F599 /* AddItemViewControllerTest.swift */,
 			);
 			path = FancyTests;
 			sourceTree = "<group>";
@@ -606,7 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D2B5AC1DF9E8E30044F599 /* DelegateViewControllerTest.swift in Sources */,
-				225852231DF74ED400D1ABFD /* AddItemTest.swift in Sources */,
+				22D2B5AE1DFA14440044F599 /* AddItemViewControllerTest.swift in Sources */,
 				229F0FD41DF8AB5000BC96B8 /* ToDoItemDAOTest.swift in Sources */,
 				22094CDD1DF0DE0C004C9BC8 /* BoardSpec.swift in Sources */,
 				2205ADDD1DF8949000832C8A /* CoreDataHelperTest.swift in Sources */,
